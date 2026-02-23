@@ -1,7 +1,7 @@
 <h2>Anvil</h2>
 <p><strong>Target:</strong> <code>AV.010.001</code></p>
 
-<table border="1" cellpadding="0" cellspacing="0" style="width: 90%; font-size: 12px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width: 100%; font-size: 12px; table-layout:fixed;">
   <tr>
     <!-- LEFT: SITE MAP (BASED ON FR TABLE) -->
     <td valign="top" style="width: 28%; padding: 10px;">
@@ -74,12 +74,12 @@
       </ul>
     </td>
     <!-- RIGHT: MEDIA + DESCRIPTION + USE CASE -->
-    <td valign="top" style="width: 72%; padding: 10px;">
-      <p><a href="/assets/Authorized.png">Homepage</a> &gt; <strong>View Profile</strong></p>
+    <td valign="top" style="width: 72%; padding: 10px; min-width: 0; overflow-wrap: anywhere; word-break: break-word;">
+      <p><a href="/assets/Authorized.png">Homepage</a> &gt; <strong>View Profile (FR2.0)</strong></p>
       <p><strong>View Profile (Buyer)</strong></p>
-      <img src="../../assets/img/buyer-profile-view.png" alt="View Profile - Buyer (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/buyer-profile-view.png" alt="View Profile - Buyer (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <p><strong>View Profile (Seller)</strong></p>
-      <img src="../../assets/img/seller-profile-view.png" alt="View Profile - Seller (mockup)" style="max-width:100%; border:1px solid #000;">
+      <img src="../../assets/img/seller-profile-view.png" alt="View Profile - Seller (mockup)" style="width:70%; aspect-ratio:16/9; object-fit:contain; background:#fff; border-radius:10px;" >
       <h2>View Profile (FR1.0)</h2>
       <p>
         The View Profile feature allows logged-in users to review their saved profile details such as name, contact information,
@@ -91,43 +91,26 @@
         and review seller-related information that helps identify them across listings and reservations.
       </p>
       <h2>Use Case Scenario</h2>
-      <table border="1" cellpadding="6" cellspacing="0" style="width:100%; font-size:12px;">
-        <tr>
-          <th style="width: 22%;">Actor(s)</th>
-          <td>Buyer, Seller</td>
-        </tr>
-        <tr>
-          <th>Goal</th>
-          <td>To view saved profile information for verification and coordination purposes.</td>
-        </tr>
-        <tr>
-          <th>Preconditions</th>
-          <td>
-            1. The user is logged in.<br>
-            2. The user has an existing profile record stored in the system.
-          </td>
-        </tr>
-        <tr>
-          <th>Main Scenario</th>
-          <td>
-            1. The user opens the navigation menu and selects <strong>Profile</strong>.<br>
-            2. The system displays the user’s profile information (name, contact details, and location).<br>
-            3. If the user is a seller, the system also displays seller-specific details.<br>
-            4. The user reviews the information.<br>
-            5. If changes are needed, the user selects <strong>Edit Profile</strong> to update details; otherwise, the user exits the page.
-          </td>
-        </tr>
-        <tr>
-          <th>Alternative / Exception Flow</th>
-          <td>
-            A1. Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.
-          </td>
-        </tr>
-        <tr>
-          <th>Outcome</th>
-          <td><strong>Success:</strong> The user successfully views their profile details and confirms the information shown.</td>
-        </tr>
-      </table>
+      <p>
+        <strong>Actor(s):</strong> Buyer, Seller<br>
+        <strong>Goal:</strong> To view saved profile information for verification and coordination purposes.<br><br>
+        <strong>Preconditions:</strong>
+        <ol>
+          <li>The User is logged in
+          <li>The User has an existing profile record stored in the system</li>
+        </ol>
+        <strong>Main Scenario:</strong><br>
+        <ol>
+          <li>The User opens the navigation menu and selects <strong>Profile</strong>
+          <li>The System displays the user's profile information (name, contact details, and location).
+          <li>If the user is a seller, the system also displays seller-specific details.
+          <li>The user reviews the information.
+          <li>If changes are needed, the user selects <strong>Edit Profile</strong>; otherwise, the user exits the page.</li>
+        </ol>
+        <strong>Alternative / Exception Flow:</strong><br>
+        - A1) Profile record missing/incomplete: The system prompts the user to complete required profile fields before using protected actions.<br><br>
+        <strong>Outcome:</strong> <strong>Success:</strong> The user successfully views their profile details and confirms the information shown.
+      </p>
     </td>
   </tr>
 
